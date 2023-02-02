@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Formulário Kenzie</title>
+</head>
+<body>
+   <form>
+      <div>
+         <label for="nome">Nome:</label>
+         <br>
+         <input type="text" id="nome" name="participante" placeholder="Digite seu nome aqui..." required="true">
+      </div>
+
+      <div>
+         <label for="email">Email:</label>
+         <br>
+         <input type="email" id="email" name="email_participante" placeholder="Digite seu email aqui..." required="true">
+      </div>
+
+      <div>
+         <label for="descricao">Descrição:</label>
+         <br>
+         <textarea name="descrição_candidato" id="descricao" cols="30" rows="10" placeholder="Fale mais sobre você aqui..."></textarea>
+      </div>
+
+      <div>
+         <label for="modulo">Módulo:</label>
+         <select name="modulo_participante" id="modulo">
+            <option value="m1">Módulo 1</option>
+            <option value="m2">Módulo 2</option>
+            <option value="m3">Módulo 3</option>
+            <option value="m4">Módulo 4</option>
+            <option value="m5">Módulo 5</option>
+            <option value="m6">Módulo 6</option>
+         </select>
+      </div>
+
+      <div>
+         <label for="senha">Senha:</label>
+         <br>
+         <input type="password" id="senha" name="senha_participante" placeholder="Digite sua senha aqui...">
+      </div>
+
+      <div>
+         <label for="confirm_senha">Confirmar Senha:</label>
+         <br>
+         <input type="password" id="confirm_senha" name="confirm_senha" placeholder="Digite sua senha novamente aqui...">
+      </div>
+
+      <div>
+         <p>Deseja receber novidades em seu e-mail?</p>
+         <label for="atualizar_sim">Sim</label>
+         <input type="radio" id="atualizar_sim" name="atualizacao">
+
+         <label for="atualizar_nao">Não</label>
+         <input type="radio" id="atualizar_nao" name="atualizacao">
+      </div>
+
+      <div>
+         <button type="submit">
+            Cadastrar
+         </button>
+      </div>
+   </form>
+</body>
+</html>
